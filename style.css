@@ -1,0 +1,168 @@
+*{
+   margin: 0   ;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: "Josefin Sans", sans-serif;
+   background: #181824;
+   color: hsl(234, 39%, 85%);
+}
+.cover{
+   height: 40vh;
+}
+.container{
+   position: relative;
+   top : -32vh ;
+   width: 50%;
+   max-width: 500px;
+   margin: auto;
+   
+   header{
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      letter-spacing: 10px;
+      font-size: 11px;
+
+      img{
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+      }
+   }
+}
+.form{
+   background: #25273C;
+   padding: 15px;
+   display: flex;
+   gap: 15px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+
+
+   .input{
+      flex: 9;
+      outline: none;
+      background: #25273C;
+      border: none;
+      color: hsl(234, 39%, 85%);
+   }
+
+}
+.checkbox{
+   width: 1.3em;
+   height: 1.3em;
+   background-color: inherit;
+   border-radius: 50%;
+   vertical-align: middle;
+   appearance: none;
+   -webkit-appearance: none;
+   outline: none;
+   cursor: pointer;
+   border: 1px solid white;
+}
+
+.checkbox:checked {
+   background: url(./images/icon-check.svg) no-repeat center #76B0F9;
+   border: none;
+}
+.checkbox:hover{
+border : 1px solid #76B0F9
+}
+
+
+.tasks li{
+   background: #25273C;
+   padding: 12px;
+   display: flex;
+   gap: 15px;
+   align-items: center;
+   border-bottom: 1px solid hsl(237, 14%, 26%);
+   list-style-type: none;
+   justify-content: space-between;
+   align-items: center;
+
+   p{
+      display: inline;
+      margin-left: 10px;
+      font-size: 14px;
+   }
+
+   img{
+      width: 12px;
+      cursor: pointer;
+   }
+
+   .counter{
+      font-size: 12px;
+   }
+
+   .stats {
+      display: flex;
+      gap: 10px;
+   }
+
+   button{
+      background: transparent;
+      border: none;
+      color: hsl(233, 14%, 35%);
+      font-size: 12px;
+      cursor: pointer;
+   }
+   button:hover{
+      color: white;
+   }
+
+}
+.dark{
+   background: #25273C !important;
+}
+.light{
+   background: white !important;
+}
+/* ---------------------change Icon-------------------------------*/
+.sun{
+   background: url(./images/icon-sun.svg) center no-repeat;
+   background-size: auto 100%;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+.moon{
+   background: url(./images/icon-moon.svg) center no-repeat;
+   background-size: auto 100%;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+
+.desktopDark{
+   background: url(./images/bg-desktop-dark.jpg) center no-repeat ;
+   background-size: 100% 100%;
+}
+.desktopLight{
+   background: url(./images/bg-desktop-light.jpg) center no-repeat ;
+   background-size: 100% 100%;
+}
+
+
+
+
+/*-----------------------media--------------------------*/
+
+@media(max-width:600px){
+   .cover{
+      height: 30vh;
+   }
+   .container{
+      top : -20vh ;
+      width: 75%;
+
+   }
+   .form{
+      padding: 10px;
+   }
+}
